@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/homeFragment" android:title="Anasayfa"
+        android:icon="@drawable/ic_home"></item>
+
+    <item android:id="@+id/usersFragment" android:title="Sohbet"
+        android:icon="@drawable/ic_message"></item>
+
+    <item android:id="@+id/uploadFragment" android:title=""
+        android:icon="@drawable/ic_add"></item>
+
+    <item android:id="@+id/profileFragment" android:title="Profil"
+        android:icon="@drawable/ic_profil"></item>
+
+</menu>
