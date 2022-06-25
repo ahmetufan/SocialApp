@@ -24,7 +24,6 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/item_left_side_background"
             android:padding="5dp"
             android:paddingStart="8dp"
             android:gravity="center"
@@ -35,6 +34,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="9dp"
+                android:textColor="@color/black"
                 android:text="Deneme"
                 android:textSize="16sp"
                 ></TextView>

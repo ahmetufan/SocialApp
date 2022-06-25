@@ -3,10 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:gravity="center"
+    android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".view.ProfileFragment">
+    android:background="@drawable/whitebackground"
+    tools:context=".Fragments.ProfileFragment">
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,21 +15,24 @@
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
+
+
         <TextView
             android:id="@+id/textView"
             android:layout_width="0dp"
             android:layout_weight="2"
+            android:layout_marginEnd="50dp"
+            android:gravity="center_horizontal"
             android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
             android:text="Profile"
             android:textColor="@color/black"
             android:textSize="15sp"
             android:textStyle="bold" />
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/imgProfile"
+            android:id="@+id/imgProfile2"
             android:padding="5dp"
-            android:layout_width="50dp"
+            android:layout_width="0dp"
             android:layout_weight="0.5"
             android:layout_height="42dp"
             android:src="@mipmap/ic_launcher_round"
@@ -55,7 +59,7 @@
             android:orientation="vertical">
 
             <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/userImage"
+                android:id="@+id/userImage2"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_marginTop="15dp"
@@ -65,19 +69,18 @@
                 app:civ_border_width="0.5dp"></de.hdodenhof.circleimageview.CircleImageView>
 
             <EditText
-                android:id="@+id/etuserName"
+                android:id="@+id/etuserName2"
                 android:textAlignment="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="9dp"
                 android:maxLines="1"
                 android:text="Deneme"
-                android:background="@color/white"
                 android:textSize="21sp"
                 android:textStyle="bold"></EditText>
 
             <Button
-                android:id="@+id/btnSave"
+                android:id="@+id/btnSave2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
@@ -93,17 +96,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:visibility="gone"
-                android:id="@+id/progressBar"></ProgressBar>
+                android:id="@+id/progressBar2"></ProgressBar>
 
 
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 
-
-
-
 </LinearLayout>
-
-
-

@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "225471680667",
-    "project_id": "mesenger21-d99e0",
-    "storage_bucket": "mesenger21-d99e0.appspot.com"
+    "project_number": "67159840254",
+    "project_id": "socialapp-43664",
+    "storage_bucket": "socialapp-43664.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:225471680667:android:88fac8615002336bba763e",
+        "mobilesdk_app_id": "1:67159840254:android:2e045509f452619c8d9caf",
         "android_client_info": {
-          "package_name": "com.ahmet.messenger21"
+          "package_name": "com.ahmet.socialapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "225471680667-n8scn1onfh1img9fgdssjonjg0kv4t3o.apps.googleusercontent.com",
+          "client_id": "67159840254-a9u9gi9h1tqduvp765hjmnijp6rsn0dk.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBIGE_ds0RdYYGgPgbmebYN5HCo91T9c2M"
+          "current_key": "AIzaSyDvF71EQJOuujR6qBk0i_s889kmOhVwpTc"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "225471680667-n8scn1onfh1img9fgdssjonjg0kv4t3o.apps.googleusercontent.com",
+              "client_id": "67159840254-a9u9gi9h1tqduvp765hjmnijp6rsn0dk.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
