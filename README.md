@@ -13,6 +13,12 @@ Following firebase services need to be enabled in the firebase console<br/>
 ## LOGIN - REGİSTER - HOME - CHAT - PROFIL - PERSONS
 
 
+![77](https://user-images.githubusercontent.com/100429928/178045176-ea61d820-4e60-4d90-92e4-a1540c8e9ade.jpg)
+![66](https://user-images.githubusercontent.com/100429928/178045179-fc9379fc-e2a3-4d4e-ad4c-62bddc2fee05.jpg)
+![55](https://user-images.githubusercontent.com/100429928/178045180-30ec5f27-695f-4ba6-8e8a-3520169a3d34.jpg)
+
+
+
 ![44](https://user-images.githubusercontent.com/100429928/178044819-974c9f92-fcd1-4026-bec1-afb813e569f3.jpg)
 ![33](https://user-images.githubusercontent.com/100429928/178044824-7b47d41c-6918-4996-ab49-727e60e0a661.jpg)
 ![22](https://user-images.githubusercontent.com/100429928/178044826-ecd37769-df7c-4cfa-80e2-1c26ca667695.jpg)
