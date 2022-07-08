@@ -11,6 +11,14 @@ Following firebase services need to be enabled in the firebase console<br/>
 •	Composite indexes should be created for contact query(link for enabling indexes could be found from logcat while using the app)<br/> 
 <br/> <br/> <br/> 
 ## LOGIN - REGİSTER - HOME - CHAT - PROFIL - PERSONS
+
+
+![44](https://user-images.githubusercontent.com/100429928/178044819-974c9f92-fcd1-4026-bec1-afb813e569f3.jpg)
+![33](https://user-images.githubusercontent.com/100429928/178044824-7b47d41c-6918-4996-ab49-727e60e0a661.jpg)
+![22](https://user-images.githubusercontent.com/100429928/178044826-ecd37769-df7c-4cfa-80e2-1c26ca667695.jpg)
+
+
+
 ![1](https://user-images.githubusercontent.com/100429928/178043867-7ada8c01-85c9-48ba-a7f6-197557635ef9.jpg)
 ![2](https://user-images.githubusercontent.com/100429928/178043866-287796e3-f1d2-45a4-a949-48e1bdebe55a.jpg)
 ![3](https://user-images.githubusercontent.com/100429928/178043864-f73046d0-d345-4cf7-bd4d-55b95b233b57.jpg)
