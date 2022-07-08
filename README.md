@@ -14,7 +14,6 @@
 <br/> <br/> <br/> 
 ## LOGIN - REGİSTER - HOME - CHAT - PROFIL - PERSONS
 
-
 ![1](https://user-images.githubusercontent.com/100429928/178045649-b23fb2ca-4a05-459e-a2ee-83ee17c30435.jpg)
 ![2](https://user-images.githubusercontent.com/100429928/178045648-40c71513-e48a-435e-aab8-622f65903831.jpg)
 ![3](https://user-images.githubusercontent.com/100429928/178045645-3327b763-a3b4-4ae6-936d-b55167dc5966.jpg)
@@ -28,11 +27,13 @@
 <br/> 
 •	Kotlin - First class and official programming language for Android development.<br/> 
 •	Navigation Component - Handle everything needed for in-app navigation with a single Activity.<br/> 
-•	[Cloud Messaging](https://firebase.google.com/products/cloud-messaging) - For Sending Notification to client app.<br/> 
+•	Cloud Messaging - For Sending Notification to client app.<br/> 
 •	Cloud Firestore - Flexible, scalable NoSQL cloud database to store and sync data.<br/> 
 •	Cloud Storage - For Store and serve user-generated content.<br/> 
 •	Authentication - For Creating account with mobile number.<br/> 
 •	Realtime Database - Store and sync data with our NoSQL cloud database.<br/> 
 •	Picasso - a powerful image downloading and caching library for Android.<br/> 
+
+
 •	Convert Specific Classes to and from JSON.Runtime library with core serialization API and support libraries with various serialization formats.<br/> 
 
