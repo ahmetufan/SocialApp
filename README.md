@@ -1,9 +1,11 @@
 # SocialApp
 
 
-SocialApp is a Sample Messaging Android app created to demonstrate the use of Modern Android development tools and Firebase
-Create a firebase project and replace the google-services.json file which you get from your firebase project console*
-Following firebase services need to be enabled in the firebase console<br/>
+-SocialApp is a Sample Messaging Android app created to demonstrate the use of Modern Android development tools and Firebase
+
+-Create a firebase project and replace the google-services.json file which you get from your firebase project console
+
+-Following firebase services need to be enabled in the firebase console<br/>
 •	Phone Auth <br/> 
 •	Cloud Firestore<br/> 
 •	Realtime Database<br/> 
@@ -20,3 +22,17 @@ Following firebase services need to be enabled in the firebase console<br/>
 ![55](https://user-images.githubusercontent.com/100429928/178045180-30ec5f27-695f-4ba6-8e8a-3520169a3d34.jpg)
 ![66](https://user-images.githubusercontent.com/100429928/178045179-fc9379fc-e2a3-4d4e-ad4c-62bddc2fee05.jpg)
 ![77](https://user-images.githubusercontent.com/100429928/178045176-ea61d820-4e60-4d90-92e4-a1540c8e9ade.jpg)
+
+
+# Built With
+
+•	Kotlin - First class and official programming language for Android development.
+•	Navigation Component - Handle everything needed for in-app navigation with a single Activity.
+•	Cloud Messaging - For Sending Notification to client app.
+•	Cloud Firestore - Flexible, scalable NoSQL cloud database to store and sync data.
+•	Cloud Storage - For Store and serve user-generated content.
+•	Authentication - For Creating account with mobile number.
+•	Realtime Database - Store and sync data with our NoSQL cloud database.
+•	Picasso - a powerful image downloading and caching library for Android.
+•	Convert Specific Classes to and from JSON.Runtime library with core serialization API and support libraries with various serialization formats.
+
