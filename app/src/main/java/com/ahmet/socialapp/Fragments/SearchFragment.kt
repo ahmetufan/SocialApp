@@ -76,23 +76,29 @@ class SearchFragment : Fragment() {
             override fun onDataChange(snapshot: DataSnapshot) {
 
                 (mUsers as ArrayList<Users>).clear()
+
                 if (seacrhEditText!!.text.toString() == "") {
 
                     for (snapshot2 in snapshot.children) {
 
                         val user: Users? = snapshot2.getValue(Users::class.java)
+
                         if (!(user!!.getUID()).equals(firebaseUserID)) {
 
                             (mUsers as ArrayList<Users>).add(user)
                         }
                     }
-                    userAdapter = UserAdapter(context!!, mUsers!!, false)
-                    recyclerView!!.adapter=userAdapter
+                    if (activity != null) {
+
+                        userAdapter = UserAdapter(context!!, mUsers!!, false)
+                        recyclerView!!.adapter=userAdapter
+                    }
+
                 }
             }
 
             override fun onCancelled(error: DatabaseError) {
-                TODO("Not yet implemented")
+
             }
         })
     }

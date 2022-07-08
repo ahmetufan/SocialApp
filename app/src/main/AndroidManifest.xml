@@ -25,24 +25,26 @@
         <activity
             android:name=".UploadActivity"
             android:exported="false" />
-        <activity
-            android:name=".ChatActivity"
-            android:exported="true" />
+
         <activity
             android:name=".WelcomeActivity"
-            android:exported="true">
+            android:exported="true"/>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity
-            android:name=".LoginActivity"
-            android:exported="true" />
-        <activity
             android:name=".RegisterActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize"/>
         <activity
             android:name=".MainActivity"
             android:exported="true" />

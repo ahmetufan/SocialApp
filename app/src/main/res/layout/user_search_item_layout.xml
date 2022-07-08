@@ -8,9 +8,8 @@
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_image"
         android:layout_width="60dp"
-        android:layout_marginTop="10dp"
         android:layout_height="60dp"
-        android:src="@drawable/profile" />
+        android:layout_marginTop="10dp" />
 
     <TextView
         android:id="@+id/username"
@@ -19,7 +18,7 @@
         android:layout_centerInParent="true"
         android:layout_marginLeft="12dp"
         android:layout_toRightOf="@+id/profile_image"
-        android:fontFamily="@font/adamina"
+        android:fontFamily="@font/amaranth"
         android:text="user name"
         android:textSize="19sp"
         android:textStyle="bold" />
@@ -59,7 +58,9 @@
         android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/profile_image"
         android:layout_marginTop="14dp"
+        android:textColor="#B3B1B1"
         android:layout_marginLeft="20dp"
+        android:fontFamily="@font/amaranth"
         android:padding="6dp"
         android:maxLines="1"
         android:textSize="19sp" />

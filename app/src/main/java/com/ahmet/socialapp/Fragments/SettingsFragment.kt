@@ -108,11 +108,11 @@ class SettingsFragment : Fragment()
 
         if (socialChecker == "website")
         {
-            builder.setTitle("Write URL:")
+            builder.setTitle("Arama Yapınız : ")
         }
         else
         {
-            builder.setTitle("Write username:")
+            builder.setTitle("Kullanıcı Adı Giriniz :")
         }
 
         val editText = EditText(context)
@@ -127,13 +127,13 @@ class SettingsFragment : Fragment()
         }
         builder.setView(editText)
 
-        builder.setPositiveButton("Create", DialogInterface.OnClickListener{
+        builder.setPositiveButton("Oluştur", DialogInterface.OnClickListener{
                 dialog, which ->
             val str = editText.text.toString()
 
             if (str == "")
             {
-                Toast.makeText(context, "Please write something...", Toast.LENGTH_LONG).show()
+                Toast.makeText(context, "Lütfen Birşeyler yazın...", Toast.LENGTH_LONG).show()
             }
             else
             {
@@ -141,7 +141,7 @@ class SettingsFragment : Fragment()
             }
         })
 
-        builder.setNegativeButton("Cancel", DialogInterface.OnClickListener{
+        builder.setNegativeButton("İptal", DialogInterface.OnClickListener{
                 dialog, which ->
             dialog.cancel()
         })
@@ -173,7 +173,7 @@ class SettingsFragment : Fragment()
                 task ->
             if (task.isSuccessful)
             {
-                Toast.makeText(context, "updated Successfully.", Toast.LENGTH_LONG).show()
+                Toast.makeText(context, "Yükleme Başarılı", Toast.LENGTH_LONG).show()
             }
         }
     }
@@ -193,7 +193,7 @@ class SettingsFragment : Fragment()
         if (requestCode == RequestCode  &&  resultCode == Activity.RESULT_OK  &&  data!!.data != null)
         {
             imageUri = data.data
-            Toast.makeText(context, "uploading....", Toast.LENGTH_LONG).show()
+            Toast.makeText(context, "Yükleniyor....", Toast.LENGTH_LONG).show()
             uploadImageToDatabase()
         }
     }
@@ -201,7 +201,7 @@ class SettingsFragment : Fragment()
     private fun uploadImageToDatabase()
     {
         val progressBar = ProgressDialog(context)
-        progressBar.setMessage("image is uploading, please wait....")
+        progressBar.setMessage("Fotoğraf Yükleniyor....")
         progressBar.show()
 
         if (imageUri!=null)

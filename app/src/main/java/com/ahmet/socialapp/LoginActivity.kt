@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import android.widget.Toolbar
+import com.ahmet.socialapp.Fragments.MainFragment
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.DatabaseReference
 import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_register.*
@@ -15,25 +17,23 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var refUsers: DatabaseReference
     private var firebaseUserId:String =""
 
+    var firebaseUser: FirebaseUser? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
 
-     /*   val toolbar: Toolbar =findViewById(R.id.toolbar_login)
-        supportActionBar!!.title="Login"
-        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
-        toolbar.setNavigationOnClickListener {
-
-            val intent= Intent (this@LoginActivity,WelcomeActivity::class.java)
-            startActivity(intent)
-            finish()
-        }
-      */
         mAuth=FirebaseAuth.getInstance()
 
         login_btn.setOnClickListener {
             loginUser()
+        }
+
+        kayit_image.setOnClickListener {
+
+            val intent=Intent (this@LoginActivity, RegisterActivity::class.java)
+            startActivity(intent)
         }
 
 
@@ -44,7 +44,7 @@ class LoginActivity : AppCompatActivity() {
         val password:String=password_login.text.toString()
 
         if (email == "" || password == "") {
-            Toast.makeText(this@LoginActivity, "Please write", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@LoginActivity, "Lütfen boş bırakmayınız !", Toast.LENGTH_SHORT).show()
         } else {
 
             mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener { task ->
@@ -56,10 +56,22 @@ class LoginActivity : AppCompatActivity() {
                     finish()
 
                 } else {
-                    Toast.makeText(this@LoginActivity, "Error "+task.exception!!.message.toString(), Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@LoginActivity, "Hata "+task.exception!!.message.toString(), Toast.LENGTH_SHORT).show()
 
                 }
             }
+        }
+    }
+
+    override fun onStart() {
+        super.onStart()
+
+        firebaseUser = FirebaseAuth.getInstance().currentUser
+
+        if (firebaseUser != null) {
+            val intent=Intent (this@LoginActivity, MainActivity::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 }

@@ -8,13 +8,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
-import com.ahmet.socialapp.ModelClasses.Chat
+import com.ahmet.socialapp.LoginActivity
 import com.ahmet.socialapp.ModelClasses.Users
 import com.ahmet.socialapp.R
 import com.ahmet.socialapp.UploadActivity
-import com.ahmet.socialapp.WelcomeActivity
-import com.ahmet.socialapp.adapters.UserAdapter
 import com.ahmet.socialapp.adapters.ViewPagerAdapterr
 import com.bumptech.glide.Glide
 import com.google.android.material.tabs.TabLayoutMediator
@@ -54,16 +51,16 @@ class MainFragment : Fragment() {
         TabLayoutMediator(tab_layout, view_pager) { tab, position ->
             when (position) {
                 0 -> {
-                    tab.text = "Home"
+                    tab.text = "Anasayfa"
                 }
                 1 -> {
-                    tab.text = "Chats"
+                    tab.text = "Sohbet"
                 }
                 2 -> {
-                    tab.text = "Search"
+                    tab.text = "Kişiler"
                 }
                 3 -> {
-                    tab.text = "Settings"
+                    tab.text = "Profil"
                 }
                 else -> {
                     throw Resources.NotFoundException("Pozisyon Yok")
@@ -77,10 +74,17 @@ class MainFragment : Fragment() {
                 if (snapshot.exists()) {
                     val user: Users? = snapshot.getValue(Users::class.java)
 
-                    user_name.text = user!!.getUserName()
 
-                    Glide.with(this@MainFragment).load(user.getProfile())
-                        .placeholder(R.drawable.profile).into(profile_image)
+
+                    if (activity != null) {
+
+                        user_name.text=user!!.getUserName()
+
+                        Glide.with(view.context).load(user!!.getProfile())
+                            .placeholder(R.drawable.profile).into(profile_image)
+                    }
+
+
                 }
             }
 
@@ -105,7 +109,7 @@ class MainFragment : Fragment() {
 
                 FirebaseAuth.getInstance().signOut()
 
-                val intent = Intent(requireContext(), WelcomeActivity::class.java)
+                val intent = Intent(requireContext(), LoginActivity::class.java)
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
                 startActivity(intent)
 
@@ -116,12 +120,13 @@ class MainFragment : Fragment() {
         }
 
     }
-    private fun updateStatus(status:String) {
 
-        val ref=FirebaseDatabase.getInstance().reference.child("Users").child(firebaseUser!!.uid)
+    private fun updateStatus(status: String) {
 
-        val hashMap=HashMap<String,Any> ()
-        hashMap["status"]=status
+        val ref = FirebaseDatabase.getInstance().reference.child("Users").child(firebaseUser!!.uid)
+
+        val hashMap = HashMap<String, Any>()
+        hashMap["status"] = status
         ref!!.updateChildren(hashMap)
     }
 

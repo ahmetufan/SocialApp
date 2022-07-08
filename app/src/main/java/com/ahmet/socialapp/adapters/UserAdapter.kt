@@ -53,7 +53,7 @@ class UserAdapter(
     {
         val user: Users = mUsers[i]
         holder.userNameTxt.text = user!!.getUserName()
-        Picasso.get().load(user.getProfile()).placeholder(R.drawable.profile).into(holder.profileImageView)
+        Picasso.get().load(user.getProfile()).into(holder.profileImageView)
 
         if (isChatCheck)
         {
@@ -85,11 +85,10 @@ class UserAdapter(
 
         holder.itemView.setOnClickListener {
             val options = arrayOf<CharSequence>(
-                "Send Message",
-                "Visit Profile"
+                "Mesaj Gönder",
+                "Profile Bak"
             )
             val builder: AlertDialog.Builder = AlertDialog.Builder(mContext)
-            builder.setTitle("What do you want?")
             builder.setItems(options, DialogInterface.OnClickListener { dialog, position ->
                 if (position == 0)
                 {

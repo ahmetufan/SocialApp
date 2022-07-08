@@ -1,70 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login"
+    android:background="@drawable/login_2"
+    android:padding="25dp"
+    android:orientation="vertical"
     tools:context=".LoginActivity">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appBarLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimayDark2">
 
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar_login"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorPrimayDark2"
-            ></androidx.appcompat.widget.Toolbar>
-
-    </com.google.android.material.appbar.AppBarLayout>
-
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/view_pager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"></androidx.viewpager2.widget.ViewPager2>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:gravity="center_horizontal"
-        android:orientation="vertical"
-        android:padding="16dp">
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/login_profile"
+            android:layout_marginBottom="100dp"/>
 
         <EditText
             android:id="@+id/email_login"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_height="50dp"
+            android:drawableEnd="@drawable/login_profile"
+            android:textColor="#AEAEAE"
             android:hint="Email"
             android:inputType="text"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"></EditText>
+            android:padding="10dp"
+            android:background="@drawable/round_border"
+            android:textColorHint="@color/white" />
 
         <EditText
             android:id="@+id/password_login"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:hint="Password"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:drawableEnd="@drawable/ic_password"
+            android:textColor="#AEAEAE"
+            android:hint="Şifre"
+            android:background="@drawable/round_border"
             android:inputType="textPassword"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"></EditText>
+            android:textColorHint="@color/white" />
 
         <Button
             android:id="@+id/login_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="45dp"
             android:backgroundTint="@color/colorPrimayDark2"
-            android:text="Register"></Button>
+            android:text="Giriş Yap" />
+
+    <ImageView
+        android:id="@+id/kayit_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/add_login" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KAYIT OL"
+        android:textColor="#8E98DA"
+        android:textStyle="bold"
+        android:textSize="18sp" />
 
 
-    </LinearLayout>
+</LinearLayout>
 
-</RelativeLayout>

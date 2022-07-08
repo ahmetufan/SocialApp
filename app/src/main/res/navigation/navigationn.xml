@@ -49,11 +49,6 @@
         android:label="activity_login"
         tools:layout="@layout/activity_login" />
     <activity
-        android:id="@+id/welcomeActivity"
-        android:name="com.ahmet.socialapp.WelcomeActivity"
-        android:label="activity_welcome"
-        tools:layout="@layout/activity_welcome" />
-    <activity
         android:id="@+id/registerActivity"
         android:name="com.ahmet.socialapp.RegisterActivity"
         android:label="activity_register"

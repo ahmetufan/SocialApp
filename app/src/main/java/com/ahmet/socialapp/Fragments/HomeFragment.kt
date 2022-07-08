@@ -14,7 +14,9 @@ import com.ahmet.socialapp.ModelClasses.Post
 import com.ahmet.socialapp.R
 import com.ahmet.socialapp.adapters.RecyclerAdapter
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.DatabaseReference
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.Query
 import com.google.firebase.firestore.ktx.firestore
@@ -26,6 +28,9 @@ class HomeFragment : Fragment() {
     private lateinit var db: FirebaseFirestore
     private lateinit var postArrayList: ArrayList<Post>
     private lateinit var adaptery: RecyclerAdapter
+
+    private var refUsers: DatabaseReference? = null
+    private var firebaseUser: FirebaseUser? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,6 +47,8 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+
 
         auth = Firebase.auth
         db = Firebase.firestore

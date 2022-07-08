@@ -54,8 +54,8 @@ class MessageChatActivity : AppCompatActivity() {
         linearLayoutManager.stackFromEnd = true
         recycler_view_chats.layoutManager = linearLayoutManager
 
-        reference=FirebaseDatabase.getInstance().reference
-            .child("Users").child(userIdVisit)
+        reference=FirebaseDatabase.getInstance().reference.child("Users").child(userIdVisit)
+
         reference!!.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(p0: DataSnapshot) {
 
@@ -78,10 +78,12 @@ class MessageChatActivity : AppCompatActivity() {
             val message = text_message.text.toString()
             if (message == "")
             {
-                Toast.makeText(this@MessageChatActivity, "Please write a message, first...", Toast.LENGTH_LONG).show()
+                send_message_btn.setImageResource(R.drawable.ic_send)
+                Toast.makeText(this@MessageChatActivity, "Boş mesajı gönderemezsin !", Toast.LENGTH_LONG).show()
             }
             else
             {
+                send_message_btn.setImageResource(R.drawable.ic_send2)
                 sendMessageToUser(firebaseUser!!.uid, userIdVisit, message)
             }
             text_message.setText("")

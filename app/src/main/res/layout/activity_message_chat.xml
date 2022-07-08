@@ -12,19 +12,20 @@
         android:id="@+id/barLayout_message_chat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#A5ACC6"
         android:theme="@style/AppTheme.AppBarOverlay">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar_message_chat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?attr/colorPrimaryDark"
+            android:background="#A5ACC6"
             app:popupTheme="@style/AppTheme.PopupOverlay">
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/profile_image_mchat"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
                 android:src="@drawable/profile"
                 >
             </de.hdodenhof.circleimageview.CircleImageView>
@@ -34,7 +35,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
-                android:layout_marginLeft="26dp"
+                android:layout_marginLeft="25dp"
                 android:textColor="@android:color/white"
                 android:text="user name"
                 android:textStyle="bold"
@@ -50,16 +51,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/relative_layout_bottom"
-        android:layout_below="@+id/barLayout_message_chat"></androidx.recyclerview.widget.RecyclerView>
+        android:layout_below="@+id/barLayout_message_chat" />
 
     <RelativeLayout
         android:id="@+id/relative_layout_bottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="6dp"
-        android:background="#fff"
         android:layout_alignParentBottom="true"
-        >
+        android:padding="6dp">
 
         <ImageView
             android:id="@+id/attact_image_file_btn"
@@ -67,21 +66,23 @@
             android:layout_height="40dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
-            android:background="@drawable/ic_attach_file"></ImageView>
+            android:background="@drawable/ic_attach_file"
+            android:visibility="gone" />
 
         <EditText
             android:id="@+id/text_message"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
-            android:hint="write message here..."
-            android:layout_toRightOf="@+id/attact_image_file_btn"
-            android:layout_toLeftOf="@+id/send_message_btn"
+            android:layout_height="50dp"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="6dp"
+            android:layout_marginLeft="16dp"
             android:layout_marginRight="6dp"
-            >
-        </EditText>
+            android:layout_toLeftOf="@+id/send_message_btn"
+            android:layout_toRightOf="@+id/attact_image_file_btn"
+            android:background="@drawable/round_border"
+            android:backgroundTint="#FFFFFF"
+            android:drawableStart="@drawable/ic_edit_bos"
+            android:fontFamily="@font/amaranth"
+            android:hint="Mesaj" />
 
         <ImageView
             android:id="@+id/send_message_btn"
@@ -89,7 +90,8 @@
             android:layout_height="40dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:background="@drawable/ic_action_name"></ImageView>
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_send" />
 
     </RelativeLayout>
 

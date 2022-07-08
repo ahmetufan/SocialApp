@@ -29,13 +29,12 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:text="testing msg"
-            android:textSize="18sp"
-            android:padding="8dp"
-            android:textColor="@android:color/white"
             android:background="@drawable/background_right"
-            >
-        </TextView>
+            android:fontFamily="@font/amaranth"
+            android:padding="8dp"
+            android:text="testing msg"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"></TextView>
 
         <ImageView
             android:id="@+id/right_image_view"

@@ -46,22 +46,22 @@
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/profile_image"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
                 android:layout_marginStart="20dp"
                 android:src="@drawable/ic_profile"
-                android:tint="@color/white"></de.hdodenhof.circleimageview.CircleImageView>
+                android:tint="@color/white" />
 
             <TextView
                 android:id="@+id/user_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="26sp"
-                android:layout_marginTop="5dp"
+                android:layout_marginLeft="6sp"
+                android:layout_marginTop="9dp"
                 android:text="username"
-                android:textColor="@color/white"
+                android:textColor="#FFFFFF"
                 android:textSize="18sp"
-                android:textStyle="bold"></TextView>
+                android:textStyle="bold" />
 
         </LinearLayout>
 

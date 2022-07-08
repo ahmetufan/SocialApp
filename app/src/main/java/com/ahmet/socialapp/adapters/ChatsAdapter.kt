@@ -139,8 +139,8 @@ class ChatsAdapter(
                holder.show_text_message!!.setOnClickListener {
 
                    val option= arrayOf<CharSequence>(
-                       "Delete Message",
-                       "Cancel"
+                       "Mesajı Sil",
+                       "İptal"
                    )
 
                    var builder:AlertDialog.Builder=AlertDialog.Builder(holder.itemView.context)
