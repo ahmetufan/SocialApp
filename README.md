@@ -26,9 +26,9 @@
 
 # Built With
 <br/> 
-•	[Kotlin] (https://kotlinlang.org/) - First class and official programming language for Android development.<br/> 
+•	Kotlin - First class and official programming language for Android development.<br/> 
 •	Navigation Component - Handle everything needed for in-app navigation with a single Activity.<br/> 
-•	Cloud Messaging - For Sending Notification to client app.<br/> 
+•	[Cloud Messaging](https://firebase.google.com/products/cloud-messaging) - For Sending Notification to client app.<br/> 
 •	Cloud Firestore - Flexible, scalable NoSQL cloud database to store and sync data.<br/> 
 •	Cloud Storage - For Store and serve user-generated content.<br/> 
 •	Authentication - For Creating account with mobile number.<br/> 
