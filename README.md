@@ -25,14 +25,14 @@
 
 
 # Built With
-
-•	Kotlin - First class and official programming language for Android development.
-•	Navigation Component - Handle everything needed for in-app navigation with a single Activity.
-•	Cloud Messaging - For Sending Notification to client app.
-•	Cloud Firestore - Flexible, scalable NoSQL cloud database to store and sync data.
-•	Cloud Storage - For Store and serve user-generated content.
-•	Authentication - For Creating account with mobile number.
-•	Realtime Database - Store and sync data with our NoSQL cloud database.
-•	Picasso - a powerful image downloading and caching library for Android.
-•	Convert Specific Classes to and from JSON.Runtime library with core serialization API and support libraries with various serialization formats.
+<br/> 
+•	Kotlin - First class and official programming language for Android development.<br/> 
+•	Navigation Component - Handle everything needed for in-app navigation with a single Activity.<br/> 
+•	Cloud Messaging - For Sending Notification to client app.<br/> 
+•	Cloud Firestore - Flexible, scalable NoSQL cloud database to store and sync data.<br/> 
+•	Cloud Storage - For Store and serve user-generated content.<br/> 
+•	Authentication - For Creating account with mobile number.<br/> 
+•	Realtime Database - Store and sync data with our NoSQL cloud database.<br/> 
+•	Picasso - a powerful image downloading and caching library for Android.<br/> 
+•	Convert Specific Classes to and from JSON.Runtime library with core serialization API and support libraries with various serialization formats.<br/> 
 
