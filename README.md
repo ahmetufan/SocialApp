@@ -20,7 +20,6 @@
 ![4](https://user-images.githubusercontent.com/100429928/178045652-c827206c-4c16-4785-b2a0-6b315a97adda.jpg)
 ![55](https://user-images.githubusercontent.com/100429928/178045180-30ec5f27-695f-4ba6-8e8a-3520169a3d34.jpg)
 ![66](https://user-images.githubusercontent.com/100429928/178045179-fc9379fc-e2a3-4d4e-ad4c-62bddc2fee05.jpg)
-![77](https://user-images.githubusercontent.com/100429928/178045176-ea61d820-4e60-4d90-92e4-a1540c8e9ade.jpg)
 
 
 # Built With  :hammer_and_wrench:
@@ -36,4 +35,7 @@
 
 
 •	Convert Specific Classes to and from JSON.Runtime library with core serialization API and support libraries with various serialization formats.<br/> 
+
+# License  :page_with_curl:<br/>
+SocialApp is available under the Apache  license. See the [LICENSE](https://github.com/ahmetufan/SocialApp/blob/main/LICENSE) file for more info.
 
