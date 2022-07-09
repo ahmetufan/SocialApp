@@ -1,6 +1,5 @@
 # SocialApp
 
-
 -SocialApp is a Sample Messaging Android app created to demonstrate the use of Modern Android development tools and Firebase
 
 -Create a firebase project and replace the google-services.json file which you get from your firebase project console
