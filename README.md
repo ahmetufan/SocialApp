@@ -24,17 +24,15 @@
 [Kotlin](https://kotlinlang.org/)
 
 # Built With  :hammer_and_wrench:<br/> 
-[Kotlin](https://kotlinlang.org/) - First class and official programming language for Android development.<br/>
-[Navigation Component](https://developer.android.com/guide/navigation/navigation-getting-started) - Handle everything needed for in-app navigation with a single Activity.<br/>
-[Cloud Messaging](https://firebase.google.com/products/cloud-messaging) - For Sending Notification to client app.<br/> 
-[Cloud Firestore](https://firebase.google.com/docs/firestore) - Flexible, scalable NoSQL cloud database to store and sync data.<br/> 
-[Cloud Storage](https://firebase.google.com/docs/storage) - For Store and serve user-generated content.<br/> 
-[Authentication](https://firebase.google.com/docs/auth) - For Creating account with mobile number.<br/> 
-[Realtime Database](https://firebase.google.com/docs/database) - Store and sync data with our NoSQL cloud database.<br/> 
-[Picasso](https://square.github.io/picasso/) - a powerful image downloading and caching library for Android.<br/> 
+•	[Kotlin](https://kotlinlang.org/) - First class and official programming language for Android development.<br/>
+•	[Navigation Component](https://developer.android.com/guide/navigation/navigation-getting-started) - Handle everything needed for in-app navigation with a single Activity.<br/>
+•	[Cloud Messaging](https://firebase.google.com/products/cloud-messaging) - For Sending Notification to client app.<br/> 
+•	[Cloud Firestore](https://firebase.google.com/docs/firestore) - Flexible, scalable NoSQL cloud database to store and sync data.<br/> 
+•	[Cloud Storage](https://firebase.google.com/docs/storage) - For Store and serve user-generated content.<br/> 
+•	[Authentication](https://firebase.google.com/docs/auth) - For Creating account with mobile number.<br/> 
+•	[Realtime Database](https://firebase.google.com/docs/database) - Store and sync data with our NoSQL cloud database.<br/> 
+•	[Picasso](https://square.github.io/picasso/) - a powerful image downloading and caching library for Android.<br/>
 
-
-•	Convert Specific Classes to and from JSON.Runtime library with core serialization API and support libraries with various serialization formats.<br/> 
 
 # License  :page_with_curl:<br/>
 SocialApp is available under the Apache  license. See the [LICENSE](https://github.com/ahmetufan/SocialApp/blob/main/LICENSE) file for more info.
